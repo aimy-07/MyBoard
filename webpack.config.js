@@ -28,7 +28,17 @@ module.exports = {
             {
                 test: /\.css$/,
                 loaders: ['style-loader', 'css-loader'],
-            }
+            },
+            { 
+                test: /\.(png|jpg|gif|ttf|otf)$/,
+                loader: 'file-loader',
+                exclude: [
+                    /node_modules/,
+                ],
+                options: {
+                    name: '[path][name].[ext]'
+                },
+            },
         ],
     },
     resolve: {

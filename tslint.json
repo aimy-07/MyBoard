@@ -5,7 +5,12 @@
     ],
     "jsRules": {},
     "rules": {
-        "quotemark": [true, "single", "jsx-double"]
+        "quotemark": [true, "single", "jsx-double"],
+        "no-console": false,
+        "ordered-imports": false,
+        "object-literal-sort-keys": false,
+        "no-empty-interface": false,
+        "max-line-length": false
         // ここにルールを追加
     },
     "rulesDirectory": []

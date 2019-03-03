@@ -10,7 +10,13 @@
     "inlineSourceMap": true,
     "inlineSources": true
   },
+  "files": [
+    "@types/images.d.ts"
+  ],
   "include": [
     "./ts/**/*"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
