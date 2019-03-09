@@ -4,8 +4,9 @@ module.exports = {
     target: 'node',
     entry: './ts/index.tsx',  // エントリファイル
     cache: true,
-    mode: 'development',  // "production" | "development" | "none"
-    devtool: 'source-map',
+    mode: 'production',
+    // mode: 'development',  // "production" | "development" | "none"
+    // devtool: 'source-map',
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'index.js'

@@ -64,14 +64,14 @@ function createWindow() {
     win = new BrowserWindow({
         top: 0,
         left: 0,
-        width: 800,
-        height: 600,
+        width: 1280,
+        height: 800,
         // width: size.width,
         // height: size.height,
         // transparent: true,
         // frame: false,
-        // resizable: false,
-        // movable: true,
+        resizable: false,
+        movable: true,
         // skipTaskbar: true,
         // alwaysOnTop: true,
         // hasShadow: false,
@@ -80,8 +80,8 @@ function createWindow() {
     // backWin.maximize();
     // マウスイベントを無視
     // backWin.setIgnoreMouseEvents(true, {forward: true});
-    win.loadFile('index.html')
-    // win.loadFile(path.join(__dirname, './index.html'));
+    // win.loadFile('index.html')
+    win.loadFile(path.join(__dirname, './index.html'));
     // win.loadURL('file://' + __dirname + '/index.html');
     // 起動オプションに "--debug"があれば開発者ツールを起動
     if (process.argv.find((arg) => arg === '--debug')) {
